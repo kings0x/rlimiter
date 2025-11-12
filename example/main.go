@@ -30,7 +30,7 @@ func main() {
 		Rate:     1,
 		Capacity: 5,
 		Name:     "tokenbucket-req",
-		Store:    &requestlimiter.RedisStore{Client: rdb},
+		Store:    requestlimiter.NewRedisStore(rdb),
 	})
 
 	e := engine.New(reqLimiter)
