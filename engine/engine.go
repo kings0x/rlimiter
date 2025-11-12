@@ -11,7 +11,7 @@ type Result struct {
 
 	Remaining float64
 
-	RetryAFter time.Duration
+	RetryAfter time.Duration
 }
 
 //this is a limiter interface all the types of limiters implement this
